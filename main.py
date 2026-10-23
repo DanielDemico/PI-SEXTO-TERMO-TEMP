@@ -1,10 +1,11 @@
 """
 Mostra no terminal as leituras do DHT11 enviadas pela Heltec via USB.
+Não salva nada no banco: só os dados do rádio (via MQTT) vão para o Mongo.
 
 Instalar:  pip install pyserial
-Rodar:     python ler_sensor.py            (detecta a porta sozinho)
-           python ler_sensor.py COM5       (Windows, porta manual)
-           python ler_sensor.py /dev/ttyUSB0  (Linux)
+Rodar:     python main.py            (detecta a porta sozinho)
+           python main.py COM5       (Windows, porta manual)
+           python main.py /dev/ttyUSB0  (Linux)
 """
 import json
 import sys
